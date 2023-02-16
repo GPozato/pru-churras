@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Contador
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,39 +9,49 @@
 <ion-content [fullscreen]="true">
 
   <ion-grid>
+
     <ion-row>
+
       <ion-col>
         <ion-button fill="outline">1</ion-button>
       </ion-col>
-    </ion-row>
-    <ion-row>
+
       <ion-col>
         <ion-button fill="outline">3</ion-button>
       </ion-col>
-    </ion-row>
-    <ion-row>
+
       <ion-col>
         <ion-button fill="outline">6</ion-button>
       </ion-col>
-    </ion-row>
-    <ion-row>
+
       <ion-col>
         <ion-button fill="outline">9</ion-button>
       </ion-col>
-    </ion-row>
-    <ion-row>
+
       <ion-col>
         <ion-button fill="outline">12</ion-button>
       </ion-col>
+
     </ion-row>
+
   </ion-grid>
 
   <div class="soma">
-    <ion-fab>
-      <ion-fab-button>
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
+
+    <ion-grid>
+
+      <ion-row>
+
+        <ion-col>
+          <ion-button size="large"  color="dark" fill="outline">+</ion-button>
+            <span> Pontos </span>
+          <ion-button size="large"  color="dark" fill="outline">+</ion-button>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+
   </div>
 
 </ion-content>
