@@ -1,4 +1,15 @@
+.fundo{
+  background: image('assets/truco.jpg');
+}
+
+.truco{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
 .soma{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }

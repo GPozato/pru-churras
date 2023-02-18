@@ -6,52 +6,35 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="fundo">
 
-  <ion-grid>
+  <div class="truco">
 
-    <ion-row>
+    <ion-button fill="outline">1</ion-button>
 
-      <ion-col>
-        <ion-button fill="outline">1</ion-button>
-      </ion-col>
+    <ion-button fill="outline">3</ion-button>
 
-      <ion-col>
-        <ion-button fill="outline">3</ion-button>
-      </ion-col>
+    <ion-button fill="outline">6</ion-button>
 
-      <ion-col>
-        <ion-button fill="outline">6</ion-button>
-      </ion-col>
+    <ion-button fill="outline">9</ion-button>
 
-      <ion-col>
-        <ion-button fill="outline">9</ion-button>
-      </ion-col>
-
-      <ion-col>
-        <ion-button fill="outline">12</ion-button>
-      </ion-col>
-
-    </ion-row>
-
-  </ion-grid>
-
-  <div class="soma">
-
-    <ion-grid>
-
-      <ion-row>
-
-        <ion-col>
-          <ion-button size="large"  color="dark" fill="outline">+</ion-button>
-            <span> Pontos </span>
-          <ion-button size="large"  color="dark" fill="outline">+</ion-button>
-        </ion-col>
-
-      </ion-row>
-
-    </ion-grid>
+    <ion-button fill="outline">12</ion-button>
 
   </div>
 
-</ion-content>
+  <div class="soma">
+
+    <ion-button size="large"  color="dark" fill="outline">+</ion-button>
+
+    <span> Pontos </span>
+
+    <ion-button size="large"  color="dark" fill="outline">+</ion-button>
+
+  </div>
+
+
+</ion-content>]
+
+<ion-footer>
+  <ion-button expand="full" color="warning">RESETAR</ion-button>
+</ion-footer>
