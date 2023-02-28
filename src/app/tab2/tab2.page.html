@@ -6,29 +6,70 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="fundo">
+<ion-content [fullscreen]="true">
 
-  <div class="truco">
+  <div class="background"></div>
 
-    <ion-button fill="outline">1</ion-button>
+  <div class="container">
+    <div class="truco">
 
-    <ion-button fill="outline">3</ion-button>
+      <ion-button fill="outline">1</ion-button>
 
-    <ion-button fill="outline">6</ion-button>
+      <ion-button fill="outline">3</ion-button>
 
-    <ion-button fill="outline">9</ion-button>
+      <ion-button fill="outline">6</ion-button>
 
-    <ion-button fill="outline">12</ion-button>
+      <ion-button fill="outline">9</ion-button>
 
-  </div>
+      <ion-button fill="outline">12</ion-button>
 
-  <div class="soma">
+    </div>
 
-    <ion-button size="large"  color="dark" fill="outline">+</ion-button>
+    <div class="soma">
 
-    <span> Pontos </span>
+      <ion-button size="large"  color="dark" fill="outline">+</ion-button>
 
-    <ion-button size="large"  color="dark" fill="outline">+</ion-button>
+      <span>  </span>
+
+      <ion-button size="large"  color="dark" fill="outline">+</ion-button>
+
+    </div>
+
+    <div class="pontos">
+      <h1>0</h1>
+      <h1></h1>
+      <h1>0</h1>
+    </div>
+
+    <div class="menos">
+
+      <ion-button size="large"  color="dark" fill="outline">-</ion-button>
+
+      <span>  </span>
+
+      <ion-button size="large"  color="dark" fill="outline">-</ion-button>
+
+    </div>
+
+    <div class="time">
+
+      <ion-button size="large"  color="dark" fill="outline">Time 1</ion-button>
+
+      <span>  </span>
+
+      <ion-button size="large"  color="dark" fill="outline">Time 2</ion-button>
+
+    </div>
+
+    <div class="resultado">
+
+      <ion-button size="large"  color="dark" fill="outline"> </ion-button>
+
+      <span>  </span>
+
+      <ion-button size="large"  color="dark" fill="outline"> </ion-button>
+
+    </div>
 
   </div>
 
