@@ -11,63 +11,66 @@
   <div class="background"></div>
 
   <div class="container">
+
+    <ion-button expand="full" color="warning" class="valendo">Valendo: {{valendo}}</ion-button>
+
     <div class="truco">
 
-      <ion-button fill="outline">1</ion-button>
+      <ion-button fill="outline" (click)="normal()">1</ion-button>
 
-      <ion-button fill="outline">3</ion-button>
+      <ion-button fill="outline" (click)="truco()">3</ion-button>
 
-      <ion-button fill="outline">6</ion-button>
+      <ion-button fill="outline" (click)="facao()">6</ion-button>
 
-      <ion-button fill="outline">9</ion-button>
+      <ion-button fill="outline" (click)="marreco()">9</ion-button>
 
-      <ion-button fill="outline">12</ion-button>
+      <ion-button fill="outline" (click)="ladrao()">12</ion-button>
 
     </div>
 
     <div class="soma">
 
-      <ion-button size="large"  color="dark" fill="outline">+</ion-button>
+      <ion-button size="large" (click)="somaEsq()" color="dark" fill="outline">+</ion-button>
 
       <span>  </span>
 
-      <ion-button size="large"  color="dark" fill="outline">+</ion-button>
+      <ion-button size="large" (click)="somaDir()" color="dark" fill="outline">+</ion-button>
 
     </div>
 
     <div class="pontos">
-      <h1>0</h1>
+      <h1>{{pontos1}}</h1>
       <h1></h1>
-      <h1>0</h1>
+      <h1>{{pontos2}}</h1>
     </div>
 
     <div class="menos">
 
-      <ion-button size="large"  color="dark" fill="outline">-</ion-button>
+      <ion-button size="large" (click)="menosEsq()" color="dark" fill="outline">-</ion-button>
 
       <span>  </span>
 
-      <ion-button size="large"  color="dark" fill="outline">-</ion-button>
+      <ion-button size="large" (click)="menosDir()" color="dark" fill="outline">-</ion-button>
 
     </div>
 
     <div class="time">
 
-      <ion-button size="large"  color="dark" fill="outline">Time 1</ion-button>
+      <ion-button size="large" class="time1" color="dark" fill="outline">Nós</ion-button>
 
       <span>  </span>
 
-      <ion-button size="large"  color="dark" fill="outline">Time 2</ion-button>
+      <ion-button size="large" class="time2" color="dark" fill="outline">Eles</ion-button>
 
     </div>
 
     <div class="resultado">
 
-      <ion-button size="large"  color="dark" fill="outline"> </ion-button>
+      <ion-button size="large" class="resTime'" color="dark" fill="outline"> </ion-button>
 
       <span>  </span>
 
-      <ion-button size="large"  color="dark" fill="outline"> </ion-button>
+      <ion-button size="large" class="resTime2" color="dark" fill="outline"> </ion-button>
 
     </div>
 
@@ -77,5 +80,5 @@
 </ion-content>]
 
 <ion-footer>
-  <ion-button expand="full" color="warning">RESETAR</ion-button>
+  <ion-button expand="full" color="warning" (click)="limparJogo()">RESETAR</ion-button>
 </ion-footer>
