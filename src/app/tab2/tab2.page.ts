@@ -39,10 +39,16 @@ export class Tab2Page{
 
   somaEsq(){
     this.pontos1 = this.valendo + this.pontos1;
+    if(this.pontos1 >= 12){
+      this.resultado1++;
+    }
   }
 
   somaDir(){
     this.pontos2 = this.valendo + this.pontos2;
+    if(this.pontos2 >= 12){
+      this.resultado2++;
+    }
   }
 
   menosEsq(){
@@ -53,18 +59,13 @@ export class Tab2Page{
     this.pontos2 = this.valendo - this.pontos2;
   }
 
-  resultado(){
-    if (this.pontos1){
-
-    }
-  }
-
 
   limparJogo() {
     this.resultado1 = 0;
     this.resultado2 = 0;
     this.pontos1 = 0;
     this.pontos2 = 0;
+    this.valendo = 1;
   }
 
 }
