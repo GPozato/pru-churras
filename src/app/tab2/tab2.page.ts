@@ -41,6 +41,7 @@ export class Tab2Page{
     this.pontos1 = this.valendo + this.pontos1;
     if(this.pontos1 >= 12){
       this.resultado1++;
+      this.pontos1=0;
     }
   }
 
@@ -48,15 +49,22 @@ export class Tab2Page{
     this.pontos2 = this.valendo + this.pontos2;
     if(this.pontos2 >= 12){
       this.resultado2++;
+      this.pontos2=0
     }
   }
 
   menosEsq(){
-    this.pontos1 = this.valendo - this.pontos1;
+    this.pontos1 = this.pontos1 - this.valendo;
+    if(this.pontos1 < 0){
+      this.pontos1 = 0;
+    }
   }
 
   menosDir(){
-    this.pontos2 = this.valendo - this.pontos2;
+    this.pontos2 = this.pontos2 - this.valendo;
+    if(this.pontos2 < 0){
+      this.pontos2 = 0;
+    }
   }
 
 
