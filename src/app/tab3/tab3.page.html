@@ -1,17 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Dado
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class="background"></div>
+
+    <ion-item>
+      <ion-label>Tamanho: </ion-label>
+      <ion-input type="number" [(ngModel)]="tamanho"></ion-input>
+    </ion-item>
+    <br>
+    <ion-card>
+      <ion-card-header calss="ion-text-center">Valor: </ion-card-header>
+      <ion-card-content class="ion-text-center">
+        <img *ngIf="valorAtual === 0" [src]="imagemDado">
+        <h1 class="ion-text-center" *ngIf="valorAtual !== 0">{{valorAtual}}</h1>
+      </ion-card-content>
+    </ion-card>
+
 </ion-content>
+
+<ion-footer>
+  <ion-button expand="block" (click)="jogarDado()">Jogar o Dado!</ion-button>
+</ion-footer>

@@ -12,3 +12,14 @@ img{
   width: 100%;
   flex-flow: column;
 }
+
+.background{
+  height: 100%;
+  width: 100%;
+  background: url("../../assets/caraFundo.jpg");
+  background-size: cover;
+  filter: opacity(20%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
